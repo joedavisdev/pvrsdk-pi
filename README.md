@@ -14,12 +14,28 @@ The examples provided in the SDK are fully commented, highly optimized C++ appli
 ## Setup ##
 The Getting Started guide of our SDK Browser provides step-by-step instructions to build and deploy the SDK example applications for the various support operating systems. You can find the SDK Browser [here](http://powervr-graphics.github.io/Native_SDK/SDKBrowser.html).
 
+### Raspberry Pi ###
+Examples can be built on a Rasberry Pi running Linux by cd'ing into an Example's Build/LinuxGeneric directory and running the following command:
+
+``` Shell
+make PIBUILD=1 PLATFORM=armv6
+```
+e.g.
+``` Shell
+cd Native_SDK/Examples/Beginner/07_IntroducingPOD/OGLES2/Build/LinuxGeneric
+make PIBUILD=1 PLATFORM=armv6
+```
+This has been tested on a vanilla Raspbian distro.
+
 ## Documentation ##
 Our documentation (architecture guides, performance recommendations & white papers) can be found on the Imagination website [here](http://community.imgtec.com/developers/powervr/documentation/).
 
 ## Support ##
 If you have any questions about the SDK, PowerVR device optimization/debugging or our tools, please contact us through our [public forum](http://forum.imgtec.com/categories/powervr-graphics). We also recommend checking out our [FAQ](http://forum.imgtec.com/categories/powervr-faq) to see if your question has already been answered.
 If you would prefer to contact us confidentially, you can file a support ticket [here](https://pvrsupport.imgtec.com/new-ticket).
+
+## Kudos ##
+All Rasberry Pi specific changes are based on the [anonymousjustice/pvr-pi](https://github.com/anonymousjustice/pvr-pi) code repository.
 
 ## License ##
 The SDK is distributed under a permissive license so it can easily be integrated into commercial and non-commercial applications. You can find the license [here](https://github.com/powervr-graphics/Native_SDK/blob/master/LICENSE.txt). To further clarify the terms, we also have an SDK license FAQ (available [here](http://community.imgtec.com/developers/powervr/faq-about-the-sdk-eula/)).
