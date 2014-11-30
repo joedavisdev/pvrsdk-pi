@@ -17,8 +17,8 @@ ifeq "$(PIBUILD)" "1"
 WS_LIBS = -L/opt/vc/lib -lbcm_host
 WS_INC = /opt/vc/include/interface/vcos/pthreads
 WS = Pi
-PLAT_CFLAGS = -DRASPBERRY_PI -DHAVE_LIBBCM_HOST -DUSE_EXTERNAL_LIBBCM_HOST \
--I/opt/vc/include -I/opt/vc/include/interface/vmcs_host/linux 
+PLAT_CFLAGS += -DRASPBERRY_PI -DHAVE_LIBBCM_HOST -DUSE_EXTERNAL_LIBBCM_HOST
+PLAT_INC += /opt/vc/include /opt/vc/include/interface/vmcs_host/linux 
 else
 WS_LIBS =
 WS_INC  =
